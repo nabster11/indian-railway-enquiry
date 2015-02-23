@@ -1,0 +1,33 @@
+<div data-role="page" id="foo2" data-theme="c" data-dom-cache="true">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b"> 
+    <a data-transition="flow" data-direction='reverse' data-iconpos='left' href='#foo' data-icon='back' id="back1">Back</a>
+        <h1 style="float: left;" id="sta">Live Stations</h1> </div>
+    <div data-role="content" id="test_scroll">
+        <script type="text/javascript" src="./js/user2.js"></script>
+        <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="./css/jquery-ui.structure.min.css" />
+        <link rel='stylesheet' href='./css/style.css' />
+        <link rel='stylesheet' href='./css/style2.css' />
+        <p>Get the list of trains at given station within given hours</p>
+        <form id="form2" data-ajax="false">
+            <input type="text" id="station1" placeholder="Enter Station from" autocomplete="off" required>
+            <input type="text" id="station2" placeholder="Enter Station to" autocomplete="off" required>
+            <input type="number" min="0" max="48" id="time1" placeholder="Enter time in hrs." required>
+            <input type="submit" name="submit" value="Get Trains" data-theme="e" /> </form>
+        <div id="output"></div>
+        <div data-role="popup" id="fmenu" data-overlay-theme="a">
+            <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
+                <li data-role="divider" data-theme="b">Choose an action</li>
+                <li id="live"><a href="#">Live Status</a>
+                </li>
+                <li><a href="#" id="fare_stn">Fare</a>
+                </li>
+                <li><a href="#" id="seat_stn">Seat Availability</a>
+                </li>
+                <li><a href="#" value="2" id="route_stn">Route</a>
+                </li>
+            </ul>
+        </div>
+        <div id="t_list"> </div>
+    </div>
+</div>

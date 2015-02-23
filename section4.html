@@ -1,0 +1,23 @@
+<div data-role="page" id="stn" data-position="fixed">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+        <a data-transition="flow" data-direction='reverse' data-iconpos='left' href='#foo' data-icon='back' id="back1">Back</a>
+         <h1 style="float:right;">Train Btw Stations</h1>
+    </div>
+    <div data-role="content">
+        <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="./css/jquery-ui.structure.min.css" />
+        <script type="text/javascript" src="./js/stn.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <div id="form1">
+            <form id="stn_form123" data-ajax="false">
+                <input type="text" id="from_stn" maxLength="30" placeholder="Enter Station from" required>
+                <input type="text" id="to_stn" maxLength="30" placeholder="Enter Station to" required>
+                <input type="text" name="date" id="stn_date" placeholder="Date(Optional)" onfocus="(this.type='date')"/>
+                <input type="submit" id="submit_stn " name="submit " value="Get Trains " data-theme="e" />
+            </form>
+        </div>
+        </br>
+        <div id="t_list"></div>
+        <div id="t_query"></div>
+    </div>
+</div>

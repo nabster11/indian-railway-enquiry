@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Indian_rail_enquiry" version="1.0.0" viewmodes="fullscreen">
+    <access origin="http://api.erail.in/" subdomains="true"></access>
+    <tizen:allow-navigation>yes</tizen:allow-navigation>
+    <tizen:application id="24nUW0EUjN.erail" package="24nUW0EUjN" required_version="2.2"/>
+    <author email="purohit.div@gmail.com">divyesh</author>
+    <content src="index.html"/>
+    <tizen:content-security-policy>erail</tizen:content-security-policy>
+    <tizen:content-security-policy-report-only>yes</tizen:content-security-policy-report-only>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/network.wifi"/>
+    <icon src="logo.png" height="117" width="117"/>
+    <name>Indian Rail Enquiry</name>
+    <tizen:setting screen-orientation="portrait" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>

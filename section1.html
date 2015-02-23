@@ -1,0 +1,14 @@
+<div data-role="page" id="foo8" data-position="fixed">
+    <div data-role="header" data-tap-toggle="false" data-theme="b"> <a data-transition="flow" data-direction='reverse' data-iconpos='left' href='#foo' data-icon='back' id="back1">Back</a> 
+         <h1>PNR Status</h1> 
+    </div>
+    <div data-role="content">
+        <script type="text/javascript" src="./js/user.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <form id="form1" data-ajax="false">
+            <input type="tel" name="pnr" id="pnr" pattern="[0-9]{10}" oninvalid="setCustomValidity('Please enter a 10 digit PNR number')" oninput="setCustomValidity('')" value="" minlength="10" maxlength="10" placeholder="Enter your Valid 10 digit PNR Number" required>
+            <input type="submit" id="submitpnr" name="submit" value="Get Current Status" data-theme="e" />
+        </form>
+        <div id="pnroutput"></div>
+    </div>
+</div>
